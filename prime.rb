@@ -5,9 +5,10 @@ def prime?(integer)
   if integer < 0 || integer == 0 || integer == 1
     return false
   end
+
   for i in 2..integer-1 do
     if integer.to_f % i == 0 then return false end
   end
   true
-end
+  end
 end#end of prime? method
